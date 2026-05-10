@@ -38,7 +38,7 @@ function debugLog(message, data = null) {
   }
 }
 
-module.exports = {
+export {
   sortByImpact,
   debugLog
 };

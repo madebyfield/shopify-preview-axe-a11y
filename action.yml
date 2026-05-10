@@ -13,7 +13,7 @@ runs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: "18"
+        node-version: "22"
 
     - name: Install dependencies
       shell: bash
@@ -47,7 +47,7 @@ runs:
           const fs = require('fs');
           const commentBody = fs.readFileSync('axe-comment.md', 'utf8');
           const editBotComment = '${{ inputs.edit_bot_comment }}' === 'true';
-          
+
           if (editBotComment) {
             // Find the last comment from this bot
             const comments = await github.rest.issues.listComments({

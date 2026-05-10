@@ -1,6 +1,6 @@
-const { execSync } = require("node:child_process");
-const fs = require("node:fs");
-const { debugLog } = require("./utils");
+import { execSync } from "node:child_process";
+import fs from "node:fs";
+import { debugLog } from "./utils.js";
 
 /**
  * Checks if a URL redirects to a password protection page

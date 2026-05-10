@@ -1,5 +1,5 @@
-const fs = require("node:fs");
-const { sortByImpact, debugLog } = require("./utils");
+import fs from "node:fs";
+import { sortByImpact, debugLog } from "./utils.js";
 
 const readReport = (filename) => {
   if (!fs.existsSync(filename)) return null;
